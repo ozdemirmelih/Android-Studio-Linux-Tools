@@ -1,5 +1,7 @@
  #!/bin/bash
-echo "Please Write ADB port"
+echo "Please Write Phone IP adress"
+read ip
+ echo "Please Write ADB port"
 read port
 cd /home/$USER/Android/Sdk/platform-tools
-./adb connect 192.168.31.153:$port
+./adb connect $ip:$port
